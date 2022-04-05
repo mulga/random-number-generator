@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --grey-dark: rgb(208, 203, 203);
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Space Mono", monospace;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.generator_wrapper {
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+}
+
+.top_inside_wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 1em;
+  gap: 2em;
+}
+
+.result {
+  background-color: var(--grey);
+  /* height: 100%; */
+  /* display: table-cell; */
+  font-size: 4em;
+  /* color: var(--grey-dark); */
+  color: var(--color-sec);
+  opacity: 0.4;
+  font-weight: 600;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.min_max_wrapper {
+  /* margin-bottom: 5em; */
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.min_max_wrapper p {
+  font-size: 1.1em;
+}
+
+.min_max_wrapper input {
+  font-family: "Space Mono", monospace;
+  font-size: 1.3em;
+  padding: 0.5em;
+  border: none;
+  border-bottom: 3px solid var(--grey-dark);
+}
+
+.min_max_wrapper input:focus {
+  /* font-size: 1.1em; */
+  border-bottom-color: #005490;
+  outline: 0;
+}
+
+button {
+  background-color: var(--color-sec);
+  color: var(--white);
+  width: 100%;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* --- */
+
+@media (max-width: 768px) {
+  .top_inside_wrapper {
+    grid-template-columns: 1fr;
+    padding: 1em;
+    gap: 2em;
+  }
+}
